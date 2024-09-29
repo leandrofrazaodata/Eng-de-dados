@@ -1,0 +1,11 @@
+models:
+  - name: principais_diretores
+    description: ""
+    columns:
+      - name: diretor
+        data_type: string
+        description: ""
+
+      - name: qtd_show_diretor
+        data_type: bigint
+        description: ""

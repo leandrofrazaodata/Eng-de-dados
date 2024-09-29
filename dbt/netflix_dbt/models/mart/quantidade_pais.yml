@@ -1,0 +1,15 @@
+models:
+  - name: quantidade_pais
+    description: ""
+    columns:
+      - name: pais_origem
+        data_type: string
+        description: ""
+
+      - name: tipo
+        data_type: string
+        description: ""
+
+      - name: qtd_show_diretor
+        data_type: bigint
+        description: ""

@@ -1,0 +1,19 @@
+models:
+  - name: filmes
+    description: ""
+    columns:
+      - name: id_show
+        data_type: string
+        description: ""
+
+      - name: titulo
+        data_type: string
+        description: ""
+
+      - name: classificacao
+        data_type: string
+        description: ""
+
+      - name: ano_lancamento
+        data_type: bigint
+        description: ""
