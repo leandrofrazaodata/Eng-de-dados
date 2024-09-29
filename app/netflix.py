@@ -3,8 +3,8 @@ import psycopg2
 import pandas as pd
 
 st.set_page_config(
-    page_title="Netflix", 
-    page_icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png",  
+    page_title="Netflix", # Nome que aparece na aba do Browser
+    page_icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png",  # Imagem que aparece na aba do Browser
     layout="wide",  
 )
 
@@ -50,8 +50,8 @@ def carregar_dados_tabela(tabela):
             st.error(f"Erro ao carregar a tabela {tabela}: {e}")
             return pd.DataFrame()
 
-st.title('Dados Netflix')
-
+st.title('Dados do catálogo da Netflix') # Header principal
+st.sidebar.image("https://images.ctfassets.net/4cd45et68cgf/4nBnsuPq03diC5eHXnQYx/d48a4664cdc48b6065b0be2d0c7bc388/Netflix-Logo.jpg", use_column_width=True) # Imagem da barra lateral
 tabelas = listar_tabelas()
 tabela_selecionada = st.sidebar.selectbox("Escolha uma tabela", tabelas)
 
