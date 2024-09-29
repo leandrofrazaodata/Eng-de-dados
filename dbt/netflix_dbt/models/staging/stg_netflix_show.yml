@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_netflix_show
+    description: Informações sobre filmes e séries da Netflix
+    columns:
+      - name: id_show
+        data_type: string
+        tests:
+          - unique
+          - not_null
+      - name: ano_lancamento
+        data_type: smallint
+      - name: data_adicao
+        data_type: date
+      - name: tipo
+        data_type: string
+      - name: titulo
+        data_type: string
+      - name: classificacao
+        data_type: string
+      - name: pais_origem
+        data_type: string
+      - name: diretor
+        data_type: string
+      - name: duracao
+        data_type: string
+      - name: listado_em
+        data_type: string
+      - name: descricao
+        data_type: string
+      - name: elenco
+        data_type: string
+      - name: data_extracao
+        data_type: datetime

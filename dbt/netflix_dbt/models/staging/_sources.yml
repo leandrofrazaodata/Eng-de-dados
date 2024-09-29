@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: netflix
+    database: datalake  
+    schema: landing  
+    tables:
+      - name: netflix_shows
