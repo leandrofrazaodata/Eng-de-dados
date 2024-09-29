@@ -8,8 +8,8 @@ with stg_netflix_show as (
 diretor as (
     
     select 
-        id_show AS "ID Show",
-        diretor AS Diretor
+        id_show,
+        diretor
         
     from stg_netflix_show
     where diretor is not null
