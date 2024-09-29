@@ -8,8 +8,8 @@ with stg_netflix_show as (
 diretor as (
     
     select 
-        id_show,
-        diretor
+        id_show AS "ID Show",
+        diretor AS Diretor
         
     from stg_netflix_show
     where diretor is not null
@@ -19,8 +19,8 @@ diretor as (
 qtd_show_diretor as (
 
     select
-        diretor,
-        count(distinct id_show) as qtd_show_diretor
+        diretor AS "Nome do Diretor",
+        count(distinct id_show) as "Quantidade de filmes por diretor"
 
     from diretor
     group by diretor

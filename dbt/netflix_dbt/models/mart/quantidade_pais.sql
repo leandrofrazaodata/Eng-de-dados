@@ -10,7 +10,7 @@ pais as (
     select 
         id_show,
         pais_origem,
-        tipo
+        tipo 
         
     from stg_netflix_show
     where pais_origem is not null
@@ -20,9 +20,9 @@ pais as (
 qtd_show_pais as (
 
     select
-        pais_origem,
+        pais_origem AS "País de origem",
         tipo,
-        count(distinct id_show) as qtd_show_diretor
+        count(distinct id_show) as "Quantidade de filmes por país"
 
     from pais
     group by 

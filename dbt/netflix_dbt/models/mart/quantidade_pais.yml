@@ -1,8 +1,8 @@
 models:
   - name: quantidade_pais
-    description: ""
+    description: "Tabela com a quantidade de filmes por país e tipo [Filme ou Série]"
     columns:
-      - name: pais_origem
+      - name: "País de origem"
         data_type: string
         description: ""
 
@@ -10,6 +10,6 @@ models:
         data_type: string
         description: ""
 
-      - name: qtd_show_diretor
+      - name: "Quantidade de filmes por país"
         data_type: bigint
         description: ""

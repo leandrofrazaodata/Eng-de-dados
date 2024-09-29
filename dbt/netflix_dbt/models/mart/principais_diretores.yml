@@ -1,11 +1,11 @@
 models:
   - name: principais_diretores
-    description: ""
+    description: "Quantidade de shows produzidos por diretor"
     columns:
-      - name: diretor
+      - name: "Nome do Diretor"
         data_type: string
         description: ""
 
-      - name: qtd_show_diretor
+      - name: "Quantidade de filmes por diretor"
         data_type: bigint
         description: ""

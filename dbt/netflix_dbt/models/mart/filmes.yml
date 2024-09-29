@@ -1,19 +1,19 @@
 models:
   - name: filmes
-    description: ""
+    description: "Tabela que contém todos os filmes do catálogo da Netflix"
     columns:
-      - name: id_show
+      - name: "ID Filme"
         data_type: string
         description: ""
 
-      - name: titulo
+      - name: "Título do Filme"
         data_type: string
         description: ""
 
-      - name: classificacao
+      - name: "Classificação"
         data_type: string
         description: ""
 
-      - name: ano_lancamento
+      - name: "Ano de lançamento"
         data_type: bigint
         description: ""
