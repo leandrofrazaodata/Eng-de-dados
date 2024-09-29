@@ -5,28 +5,32 @@ with stg_netflix_show as (
 
 ),
 
-diretor as (
+pais as (
     
     select 
         id_show,
-        diretor
+        pais_origem,
+        tipo
         
     from stg_netflix_show
-    where diretor is not null
+    where pais_origem is not null
 
 ),
 
-qtd_show_diretor as (
+qtd_show_pais as (
 
     select
-        diretor,
+        pais_origem,
+        tipo,
         count(distinct id_show) as qtd_show_diretor
 
-    from diretor
-    group by diretor
+    from pais
+    group by 
+        pais_origem,
+        tipo
 
 )
 
 select *
-from qtd_show_diretor
-order by 2 desc
+from qtd_show_pais
+order by 3 desc

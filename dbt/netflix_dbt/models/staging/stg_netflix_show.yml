@@ -6,7 +6,7 @@ models:
     columns:
       - name: id_show
         data_type: string
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: ano_lancamento
@@ -15,14 +15,27 @@ models:
         data_type: date
       - name: tipo
         data_type: string
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['TV Show', 'Movie']
       - name: titulo
         data_type: string
+        data_tests:
+          - not_null
+          - unique
       - name: classificacao
         data_type: string
+        data_tests:
+          - not_null
       - name: pais_origem
         data_type: string
+        data_tests:
+          - not_null
       - name: diretor
         data_type: string
+        data_tests:
+          - not_null
       - name: duracao
         data_type: string
       - name: listado_em
