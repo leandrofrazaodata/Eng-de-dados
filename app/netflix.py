@@ -60,6 +60,6 @@ if tabela_selecionada:
     dados_tabela = carregar_dados_tabela(tabela_selecionada)
     
     if not dados_tabela.empty:
-        st.dataframe(dados_tabela)
+        st.dataframe(dados_tabela, use_container_width=True) # use_container_width=True ocupa todo o espaço disponível para o df
     else:
         st.write(f"A tabela {tabela_selecionada} está vazia.")
